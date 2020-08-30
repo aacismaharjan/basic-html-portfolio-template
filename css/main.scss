@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900&display=swap");
+
+// Global Style
+:root {
+  --primary: dodgerblue;
+  --light: #fff;
+  --dark: #111;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Button
+.btn {
+  color: var(--light);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: var(--primary);
+}
+
+body {
+  margin: 0;
+  font: 16px/1.6 "Poppins", sans-serif;
+}
+
+section {
+  padding: 100px 0;
+
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 2.25em;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Header
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  z-index: 1000;
+  transition: all 0.5s ease;
+
+  &.sticky {
+    position: fixed;
+    padding: 15px 20px;
+    background: var(--light);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+    a {
+      color: var(--dark);
+    }
+  }
+
+  a {
+    color: var(--light);
+  }
+
+  .container {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-auto-flow: column;
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.75em;
+    }
+
+    nav {
+      a {
+        margin: 0px 15px;
+      }
+    }
+  }
+}
+
+// Banner
+.banner {
+  color: var(--light);
+  min-height: 100vh;
+  background: url("../images/banner.jpg");
+  background-position: center right;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+
+  .textBx {
+    padding: 3em 0;
+
+    h2 {
+      margin: 0;
+      line-height: 1.2;
+      font-size: 2.5em;
+      font-weight: normal;
+
+      span {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+
+    h3 {
+      margin: 0 0 15px 0;
+      font-size: 1.75em;
+      font-weight: normal;
+    }
+  }
+}
+
+// About
+.about {
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+// Services
+.services {
+  color: var(--light);
+  text-align: center;
+  background-color: var(--dark);
+
+  .content {
+    &.grid-container {
+      display: grid;
+      grid-gap: 30px;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+      .servicesBx {
+        width: 100%;
+        padding: 40px 20px;
+        background: #222;
+
+        img {
+          max-width: 80px;
+          filter: invert(1);
+        }
+
+        h2 {
+          font-size: 1.25em;
+          margin: 15px 0 10px 0;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Work
+.work {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+// Testinomial
+.testinomial {
+  background-color: #f5f5f5;
+
+  .grid-container {
+    display: grid;
+    grid-gap: 30px;
+    color: var(--light);
+    grid-template-columns: repeat(2, 1fr);
+
+    .testinomialBx {
+      padding: 40px;
+      background: var(--primary);
+
+      p {
+        font-style: italic;
+      }
+
+      h3 {
+        text-align: right;
+
+        div {
+          font-weight: normal;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Contact
+.contact {
+  color: var(--light);
+  background: #222;
+
+  .grid-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .box {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+
+      .icon {
+        font-size: 24px;
+        margin-right: 30px;
+      }
+
+      h3 {
+        color: var(--primary);
+        margin: 0;
+      }
+    }
+
+    .formBx {
+      form {
+        input,
+        textarea {
+          width: 100%;
+          display: block;
+          padding: 15px 20px;
+          resize: none;
+          background: #333;
+          margin: 10px 0;
+          border: none;
+          color: var(--light);
+          outline: none;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+          color: var(--light);
+        }
+
+        textarea {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  background: var(--dark);
+
+  .copyright p {
+    color: var(--light);
+    padding: 15px 0;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    &.sticky {
+      .container {
+        .toggle {
+          filter: invert(1);
+        }
+
+        .menu {
+          top: 74px;
+          height: calc(100vh - 74px);
+        }
+      }
+    }
+
+    .container {
+      .toggle {
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/menu.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+
+        &.active {
+          background-image: url("../images/close.png");
+          background-size: 20px;
+        }
+      }
+
+      .menu {
+        position: fixed;
+        width: 100%;
+        top: 99px;
+        left: 0;
+        border-top: 1px solid var(--dark);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 99px);
+        text-align: center;
+        background: var(--light);
+        z-index: 1000;
+        transition: 0.2s;
+        left: -100%;
+
+        &.active {
+          left: 0;
+        }
+
+        a {
+          font-size: 1.5em;
+          margin: 10px 0;
+          display: block;
+          color: var(--dark);
+        }
+      }
+    }
+  }
+  .banner {
+    text-align: center;
+    font-size: 0.6em;
+  }
+
+  .about {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .testinomial {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

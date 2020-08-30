@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio | Responsive Website Design</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <a href="#home" class="logo">Portfolio</a>
+
+        <!-- Toggle Button -->
+        <span class="toggle" onclick="toggleMenu()"></span>
+
+        <!-- Nav Items -->
+        <nav class="menu" onclick="toggleMenu()">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#testinomial">Testinomial</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="banner" id="home">
+      <div class="container">
+        <div class="textBx">
+          <h2>
+            Hello, I'm
+            <br />
+            <span>Aashish Maharjan</span>.</span>
+          </h2>
+          <h3>I'm a Front End Web Developer.</h3>
+          <a href="#about" class="btn">About Me</a>
+        </div>
+      </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="heading">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="content grid-container">
+          <div class="contentBx">
+            <h3>I'm a Front End Web Developer.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              vero obcaecati exercitationem ab consequatur eveniet aperiam
+              deleniti, voluptatum explicabo sequi maxime. Nemo atque repellat
+              explicabo esse excepturi consequuntur tempore tenetur aut possimus
+              iure ea asperiores culpa molestiae, incidun t cupiditate maiores
+              dolore voluptates placeat deleniti aliquid saepe. Natus voluptatum
+              distinctio provident?
+            </p>
+          </div>
+
+          <div>
+            <img src="./images/img1.jpg" alt="Image" class="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="heading">
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+            deleniti?
+          </p>
+        </div>
+        <div class="content grid-container">
+          <div class="servicesBx">
+            <img src="./images/icon1.png" alt="Image" />
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quia accusantium consequatur, esse illum nam.
+            </p>
+          </div>
+
+          <div class="servicesBx">
+            <img src="./images/icon2.png" alt="Image" />
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quia accusantium consequatur, esse illum nam.
+            </p>
+          </div>
+
+          <div class="servicesBx">
+            <img src="./images/icon3.png" alt="Image" />
+            <h2>Android App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quia accusantium consequatur, esse illum nam.
+            </p>
+          </div>
+
+          <div class="servicesBx">
+            <img src="./images/icon4.png" alt="Image" />
+            <h2>Photography</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quia accusantium consequatur, esse illum nam.
+            </p>
+          </div>
+
+          <div class="servicesBx">
+            <img src="./images/icon5.png" alt="Image" />
+            <h2>Content Writing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quia accusantium consequatur, esse illum nam.
+            </p>
+          </div>
+
+          <div class="servicesBx">
+            <img src="./images/icon6.png" alt="Image" />
+            <h2>Video Editing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quia accusantium consequatur, esse illum nam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Project Start -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="heading">
+          <h2>Our Latest Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+            deleniti?
+          </p>
+        </div>
+
+        <div class="content grid-container">
+          <div class="workBx">
+            <img src="./images/product1.jpg" alt="Image" />
+          </div>
+
+          <div class="workBx">
+            <img src="./images/product2.jpg" alt="Image" />
+          </div>
+
+          <div class="workBx">
+            <img src="./images/product3.jpg" alt="Image" />
+          </div>
+
+          <div class="workBx">
+            <img src="./images/product4.jpg" alt="Image" />
+          </div>
+
+          <div class="workBx">
+            <img src="./images/product1.jpg" alt="Image" />
+          </div>
+
+          <div class="workBx">
+            <img src="./images/product2.jpg" alt="Image" />
+          </div>
+        </div>
+
+        <div class="heading">
+          <a href="#" class="btn">View More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Project End -->
+
+    <!-- Testinomial Start -->
+    <section class="testinomial" id="testinomial">
+      <div class="container">
+        <div class="heading">
+          <h2>Testinomial</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="content grid-container">
+          <div class="testinomialBx">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              magnam modi dicta tempora sed numquam vitae sit repudiandae omnis
+              soluta!
+            </p>
+            <h3>
+              Someone Famous
+              <div>Creative Designer</div>
+            </h3>
+          </div>
+
+          <div class="testinomialBx">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              magnam modi dicta tempora sed numquam vitae sit repudiandae omnis
+              soluta!
+            </p>
+            <h3>
+              Someone Famous
+              <div>Creative Designer</div>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testinomial End -->
+
+    <!-- Contact Start -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="heading">
+          <h2>Contact</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+
+        <div class="content grid-container">
+          <div class="contactInfo">
+            <h3>Contact Info</h3>
+            <div class="contactInfoBx">
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>
+                    4671 Sugar Camp Road,
+                    <br />
+                    Owatonna, Minnesota,
+                    <br />
+                    55060
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Phone</h3>
+                  <p>507-475-6094</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>aashishmaharjan2001@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="formBx">
+            <form>
+              <h3>Message Me</h3>
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Your Message"></textarea>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>Copyright &copy; 2020 Online Tutorials. All Right Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900&display=swap");
+:root {
+  --primary: dodgerblue;
+  --light: #fff;
+  --dark: #111;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  color: var(--light);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: var(--primary);
+}
+
+body {
+  margin: 0;
+  font: 16px/1.6 "Poppins", sans-serif;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section .heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section .heading h2 {
+  font-size: 2.25em;
+  margin: 0 0 10px 0;
+}
+
+section .heading p {
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header.sticky {
+  position: fixed;
+  padding: 15px 20px;
+  background: var(--light);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky a {
+  color: var(--dark);
+}
+
+header a {
+  color: var(--light);
+}
+
+header .container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-auto-flow: column;
+}
+
+header .container .logo {
+  font-weight: bold;
+  font-size: 1.75em;
+}
+
+header .container nav a {
+  margin: 0px 15px;
+}
+
+.banner {
+  color: var(--light);
+  min-height: 100vh;
+  background: url("../images/banner.jpg");
+  background-position: center right;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.banner .textBx {
+  padding: 3em 0;
+}
+
+.banner .textBx h2 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.banner .textBx h2 span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.banner .textBx h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+}
+
+.about .heading {
+  margin-bottom: 50px;
+}
+
+.about h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.about .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.services {
+  color: var(--light);
+  text-align: center;
+  background-color: var(--dark);
+}
+
+.services .content.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  justify-items: center;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.services .content.grid-container .servicesBx {
+  width: 100%;
+  padding: 40px 20px;
+  background: #222;
+}
+
+.services .content.grid-container .servicesBx img {
+  max-width: 80px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.services .content.grid-container .servicesBx h2 {
+  font-size: 1.25em;
+  margin: 15px 0 10px 0;
+}
+
+.services .content.grid-container .servicesBx p {
+  margin: 0;
+}
+
+.work .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.testinomial {
+  background-color: #f5f5f5;
+}
+
+.testinomial .grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  color: var(--light);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.testinomial .grid-container .testinomialBx {
+  padding: 40px;
+  background: var(--primary);
+}
+
+.testinomial .grid-container .testinomialBx p {
+  font-style: italic;
+}
+
+.testinomial .grid-container .testinomialBx h3 {
+  text-align: right;
+}
+
+.testinomial .grid-container .testinomialBx h3 div {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.contact {
+  color: var(--light);
+  background: #222;
+}
+
+.contact .grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.contact .grid-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.contact .grid-container .box .icon {
+  font-size: 24px;
+  margin-right: 30px;
+}
+
+.contact .grid-container .box h3 {
+  color: var(--primary);
+  margin: 0;
+}
+
+.contact .grid-container .formBx form input,
+.contact .grid-container .formBx form textarea {
+  width: 100%;
+  display: block;
+  padding: 15px 20px;
+  resize: none;
+  background: #333;
+  margin: 10px 0;
+  border: none;
+  color: var(--light);
+  outline: none;
+}
+
+.contact .grid-container .formBx form input::-webkit-input-placeholder,
+.contact .grid-container .formBx form textarea::-webkit-input-placeholder {
+  color: var(--light);
+}
+
+.contact .grid-container .formBx form input:-ms-input-placeholder,
+.contact .grid-container .formBx form textarea:-ms-input-placeholder {
+  color: var(--light);
+}
+
+.contact .grid-container .formBx form input::-ms-input-placeholder,
+.contact .grid-container .formBx form textarea::-ms-input-placeholder {
+  color: var(--light);
+}
+
+.contact .grid-container .formBx form input::placeholder,
+.contact .grid-container .formBx form textarea::placeholder {
+  color: var(--light);
+}
+
+.contact .grid-container .formBx form textarea {
+  height: 200px;
+}
+
+footer {
+  text-align: center;
+  background: var(--dark);
+}
+
+footer .copyright p {
+  color: var(--light);
+  padding: 15px 0;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  header.sticky .container .toggle {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  header.sticky .container .menu {
+    top: 74px;
+    height: calc(100vh - 74px);
+  }
+  header .container .toggle {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/menu.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  header .container .toggle.active {
+    background-image: url("../images/close.png");
+    background-size: 20px;
+  }
+  header .container .menu {
+    position: fixed;
+    width: 100%;
+    top: 99px;
+    left: 0;
+    border-top: 1px solid var(--dark);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: calc(100vh - 99px);
+    text-align: center;
+    background: var(--light);
+    z-index: 1000;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    left: -100%;
+  }
+  header .container .menu.active {
+    left: 0;
+  }
+  header .container .menu a {
+    font-size: 1.5em;
+    margin: 10px 0;
+    display: block;
+    color: var(--dark);
+  }
+  .banner {
+    text-align: center;
+    font-size: 0.6em;
+  }
+  .about .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .testinomial .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
