@@ -14,3 +14,10 @@ function toggleMenu() {
     toggle.classList.toggle("active");
   }
 }
+
+
+// update current year
+window.onload = function() {
+  const currentYearEl = document.querySelector("#currentYear");
+  if(currentYearEl) {currentYearEl.innerText = new Date().getFullYear();}
+}
